@@ -1,0 +1,18 @@
+server:
+  port: 9740
+
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}
+  data:
+    mongodb:
+#      host: 127.0.0.1
+#      port: 27017
+      uri: mongodb://127.0.0.1/siniestros_segurosfalabella_api?serverSelectionTimeoutMS=15000
+#      uri: mongodb://${MONGO_USR}:${MONGO_PWD}@${MONGO_HOST}/${MONGO_DB}?ssl=true&authSource=admin&serverSelectionTryOnce=false&serverSelectionTimeoutMS=15000
+
+#    mongodb:
+#     uri: mongodb://127.0.0.1/siniestros_segurosfalabella_api
+
+
+
